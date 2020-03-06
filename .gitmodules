@@ -10,3 +10,9 @@
 [submodule "vim/.vim/pack/_/start/vim-ctrlp-ag"]
 	path = vim/.vim/pack/_/start/vim-ctrlp-ag
 	url = https://github.com/lokikl/vim-ctrlp-ag.git
+[submodule "vim/.vim/pack/_/start/syntastic"]
+	path = vim/.vim/pack/_/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "vim/.vim/pack/_/start/tsuquyomi"]
+	path = vim/.vim/pack/_/start/tsuquyomi
+	url = https://github.com/Quramy/tsuquyomi.git
