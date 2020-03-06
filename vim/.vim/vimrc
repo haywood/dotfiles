@@ -1,3 +1,5 @@
+set rtp+=/usr/local/opt/fzf
+
 packadd! matchit
 
 syntax enable
@@ -6,13 +8,18 @@ set textwidth=80
 set shiftwidth=2
 set expandtab
 set autochdir
-set grepprg='ag'
 
 set directory=~/tmp,/tmp
 
+" misc
 nnoremap <esc><esc> :noh<cr>
-noremap <C-p> :CtrlPMixed<cr>
 noremap <C-f> :grep<space>
 noremap <leader>e :e $MYVIMRC<cr>
+
+" ctrlp-ag
+nnoremap <c-f> :CtrlPag<cr>
+vnoremap <c-f> :CtrlPagVisual<cr>
+nnoremap <leader>ca :CtrlPagLocate
+nnoremap <leader>cp :CtrlPagPrevious<cr>
 
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
