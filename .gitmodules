@@ -1,3 +1,9 @@
 [submodule "vim/.vim/pack/_/start/vim-closetag"]
 	path = vim/.vim/pack/_/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
+[submodule "vim/.vim/pack/_/start/yats.vim"]
+	path = vim/.vim/pack/_/start/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim.git
+[submodule "vim/.vim/pack/_/start/ctrlp.vim"]
+	path = vim/.vim/pack/_/start/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git

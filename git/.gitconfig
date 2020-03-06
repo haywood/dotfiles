@@ -1,0 +1,13 @@
+[user]
+  email = 1062477+haywood@users.noreply.github.com
+  name = Michael Reed
+[pull]
+  rebase = true
+
+[alias]
+  co = checkout
+  xl = log --decorate --oneline --graph --exclude="*gh-pages" --all
+[merge]
+	tool = gvimdiff
+[core]
+	excludesfile = /Users/haywood/.gitignore
