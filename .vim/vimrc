@@ -1,0 +1,19 @@
+packadd! matchit
+
+set textwidth=80
+set shiftwidth=2
+set grepprg='ag'
+set completeopt=menu,menuone,noselect,preview
+set autochdir
+
+let g:closetag_filetypes = 'html,xhtml,phtml,typescript.tsx,javascript.jsx'
+
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ }
+
+nnoremap <esc><esc> :noh<cr>
+noremap <C-p> :CtrlPMixed<cr>
+noremap <C-f> :grep<space>
+noremap <leader>e :e ~/.vim/vimrc
