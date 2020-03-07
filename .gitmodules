@@ -22,15 +22,6 @@
 [submodule "vim/.vim/pack/_/start/vim-airline"]
 	path = vim/.vim/pack/_/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/.vim/pack/_/start/vim-maktaba"]
-	path = vim/.vim/pack/_/start/vim-maktaba
-	url = https://github.com/google/vim-maktaba.git
-[submodule "vim/.vim/pack/_/start/vim-codefmt"]
-	path = vim/.vim/pack/_/start/vim-codefmt
-	url = https://github.com/google/vim-codefmt.git
-[submodule "vim/.vim/pack/_/start/vim-glaive"]
-	path = vim/.vim/pack/_/start/vim-glaive
-	url = https://github.com/google/vim-glaive.git
 [submodule "vim/.vim/pack/_/start/auto-pairs"]
 	path = vim/.vim/pack/_/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
