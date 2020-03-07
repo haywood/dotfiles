@@ -3,27 +3,34 @@ set rtp+=/usr/local/opt/fzf
 packadd! matchit
 
 syntax enable
+filetype plugin on
 
-set textwidth=80
-set shiftwidth=2
-set expandtab
 set autochdir
+set autoindent
 set directory=~/tmp,/tmp
+set expandtab
+set hlsearch
+set omnifunc=syntaxcomplete#Complete
+set shiftwidth=2
+set smartindent
+set smarttab
+set textwidth=80
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" YCM
+let g:ycm_semantic_triggers = {}
+let g:ycm_semantic_triggers['typescript'] = ['.']
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" Airline
+let g:airline#extensions#tabline#enabled = 1
 
 " misc
 nnoremap <esc><esc> :noh<cr>
 noremap <C-f> :grep<space>
 noremap <leader>e :e $MYVIMRC<cr>
+noremap <C-h> <C-w><C-h>
+noremap <C-j> <C-w><C-j>
+noremap <C-k> <C-w><C-k>
+noremap <C-l> <C-w><C-l>
 
 " ctrlp-ag
 nnoremap <c-f> :CtrlPag<cr>
@@ -32,3 +39,8 @@ nnoremap <leader>ca :CtrlPagLocate
 nnoremap <leader>cp :CtrlPagPrevious<cr>
 
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
+
+" ft autocmds
+autocmd FileType typescript setlocal completeopt+=menu,preview
+
+autocmd InsertLeave * FormatCode
