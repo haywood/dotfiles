@@ -28,3 +28,6 @@
 [submodule "vim/.vim/pack/_/start/vim-prettier"]
 	path = vim/.vim/pack/_/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule "vim/.vim/pack/_/start/vim-fugitive"]
+	path = vim/.vim/pack/_/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git

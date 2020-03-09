@@ -23,6 +23,12 @@ let g:ycm_semantic_triggers['typescript'] = ['.']
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 
+let g:syntastic_auto_loc_list = 0
+
+" tsuquyomi
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+
 " misc
 nnoremap <esc><esc> :noh<cr>
 noremap <C-f> :grep<space>
@@ -38,9 +44,10 @@ vnoremap <c-f> :CtrlPagVisual<cr>
 nnoremap <leader>ca :CtrlPagLocate
 nnoremap <leader>cp :CtrlPagPrevious<cr>
 
+" vim-prettier
+nnoremap <leader>p :PrettierAsync<cr>
+
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 " ft autocmds
-autocmd FileType typescript setlocal completeopt+=menu,preview
-
-autocmd InsertLeave * FormatCode
+autocmd FileType typescript setlocal completeopt=menu
