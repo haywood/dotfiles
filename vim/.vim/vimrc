@@ -47,6 +47,9 @@ nnoremap <leader>cp :CtrlPagPrevious<cr>
 " vim-prettier
 nnoremap <leader>p :PrettierAsync<cr>
 
+" nerdtree
+map <leader>t :NERDTreeToggle<CR>
+
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 " ft autocmds
