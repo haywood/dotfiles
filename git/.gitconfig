@@ -11,4 +11,4 @@
 [merge]
 	tool = gvimdiff
 [core]
-	excludesfile = /Users/haywood/.gitignore
+	excludesfile = ~/.gitignore
