@@ -10,3 +10,5 @@ repo="$(basename $repo_path)"
 git submodule add \
         "https://github.com/${repo_path}.git" \
         "vim/.vim/pack/_/start/${repo}"
+
+stow vim # ensure symlink for new plugin
