@@ -9,6 +9,7 @@
   lo = log
   xl = log --decorate --oneline --graph --exclude="*gh-pages" --all
 [merge]
-	tool = gvimdiff
+	tool = vimdiff
+	guitool = gvimdiff
 [core]
 	excludesfile = ~/.gitignore
