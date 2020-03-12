@@ -6,6 +6,7 @@
 
 [alias]
   co = checkout
+  lo = log
   xl = log --decorate --oneline --graph --exclude="*gh-pages" --all
 [merge]
 	tool = gvimdiff
