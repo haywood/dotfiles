@@ -43,12 +43,6 @@ noremap <C-j> <C-w><C-j>
 noremap <C-k> <C-w><C-k>
 noremap <C-l> <C-w><C-l>
 
-" ctrlp-ag
-nnoremap <c-f> :CtrlPag<cr>
-vnoremap <c-f> :CtrlPagVisual<cr>
-nnoremap <leader>ca :CtrlPagLocate
-nnoremap <leader>cp :CtrlPagPrevious<cr>
-
 " vim-prettier
 nnoremap <leader>p :PrettierAsync<cr>
 
