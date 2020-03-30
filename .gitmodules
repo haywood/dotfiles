@@ -7,15 +7,6 @@
 [submodule "vim/.vim/pack/_/start/ctrlp.vim"]
 	path = vim/.vim/pack/_/start/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/.vim/pack/_/start/syntastic"]
-	path = vim/.vim/pack/_/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "vim/.vim/pack/_/start/tsuquyomi"]
-	path = vim/.vim/pack/_/start/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi.git
-[submodule "vim/.vim/pack/_/start/YouCompleteMe"]
-	path = vim/.vim/pack/_/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe.git
 [submodule "vim/.vim/pack/_/start/vim-airline"]
 	path = vim/.vim/pack/_/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
@@ -52,3 +43,12 @@
 [submodule "vim/.vim/pack/_/start/fzf.vim"]
 	path = vim/.vim/pack/_/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/.vim/pack/_/start/vim-lsc"]
+	path = vim/.vim/pack/_/start/vim-lsc
+	url = https://github.com/natebosch/vim-lsc.git
+[submodule "vim/.vim/pack/_/start/supertab"]
+	path = vim/.vim/pack/_/start/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/.vim/pack/_/start/vim-glsl"]
+	path = vim/.vim/pack/_/start/vim-glsl
+	url = https://github.com/tikhomirov/vim-glsl.git

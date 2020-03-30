@@ -21,18 +21,8 @@ set smartindent
 set smarttab
 set textwidth=80
 
-" YCM
-let g:ycm_semantic_triggers = {}
-let g:ycm_semantic_triggers['typescript'] = ['.']
-
 " Airline
 let g:airline#extensions#tabline#enabled = 1
-
-let g:syntastic_auto_loc_list = 0
-
-" tsuquyomi
-let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 " misc
 nnoremap <esc><esc> :noh<cr>
@@ -44,19 +34,31 @@ noremap <C-k> <C-w><C-k>
 noremap <C-l> <C-w><C-l>
 
 " vim-prettier
-nnoremap <leader>p :PrettierAsync<cr>
+nnoremap <leader>f :PrettierAsync<cr>
 
 " nerdtree
 map <leader>t :NERDTreeToggle<CR>
 
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
+"autocmd CompleteDone * silent! pclose
 
-" ft autocmds
-autocmd FileType typescript setlocal completeopt=menu
 
 " Setup ripgrep
 if executable('rg')
-  set grepprg=rg
+  set grepprg=rg\ --vimgrep
   let g:ctrlp_user_command = 'rg %s --files --glob ""'
   let g:ctrlp_use_caching = 0
 endif
+
+" vim-lsc
+let g:lsc_server_commands = {
+      \ 'typescript': 'typescript-language-server --stdio'
+      \ }
+let g:lsc_auto_map = {
+      \ 'defaults': v:true,
+      \ 'NextReference': '<leader>n',
+      \ 'PreviousReference': '<leader>p',
+      \ }
+
+" SuperTab
+let g:SuperTabDefaultCompletionType = "<c-n>"
