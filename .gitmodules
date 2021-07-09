@@ -52,3 +52,15 @@
 [submodule "vim/.vim/pack/_/start/vim-glsl"]
 	path = vim/.vim/pack/_/start/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl.git
+[submodule "vim/.vim/pack/_/start/scratch.vim"]
+	path = vim/.vim/pack/_/start/scratch.vim
+	url = https://github.com/mtth/scratch.vim.git
+[submodule "vim/.vim/pack/_/start/kotlin-vim"]
+	path = vim/.vim/pack/_/start/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim.git
+[submodule "vim/.vim/pack/_/start/vim-gradle"]
+	path = vim/.vim/pack/_/start/vim-gradle
+	url = https://github.com/tfnico/vim-gradle.git
+[submodule "vim/.vim/pack/_/start/python-mode"]
+	path = vim/.vim/pack/_/start/python-mode
+	url = https://github.com/python-mode/python-mode.git

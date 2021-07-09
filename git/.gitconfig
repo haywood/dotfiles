@@ -13,3 +13,7 @@
 	guitool = gvimdiff
 [core]
 	excludesfile = ~/.gitignore
+[credential "https://source.developers.google.com"]
+	helper = gcloud.sh
+[http]
+	cookiefile = /Users/haywood/.gitcookies

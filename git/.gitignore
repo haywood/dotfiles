@@ -1,2 +1,6 @@
+/node_modules/
 tmp/
 *.swp
+states.json
+us.json
+__pycache__

@@ -62,3 +62,7 @@ let g:lsc_auto_map = {
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = "<c-n>"
+
+set backupdir=.backup/,~/.backup/,/tmp//
+set directory=.swp/,~/.swp/,/tmp//
+set undodir=.undo/,~/.undo/,/tmp//
