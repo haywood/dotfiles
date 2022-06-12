@@ -17,3 +17,5 @@
 	helper = gcloud.sh
 [http]
 	cookiefile = /Users/haywood/.gitcookies
+[init]
+	defaultBranch = main
